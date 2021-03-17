@@ -1,6 +1,6 @@
 package com.selab.AreaCalculator;
 
-public class Rectangle {
+public class Rectangle implements AreaComputable {
 	private int width;
 	private int height;
 
@@ -31,8 +31,8 @@ public class Rectangle {
 		this.height = height;
 	}
 
-	public int computeArea()
-	{
+	@Override
+	public int computeArea() {
 		return width * height;
 	}
 }
