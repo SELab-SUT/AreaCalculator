@@ -28,7 +28,7 @@ public class RectangleTest {
             new Rectangle(RECTANGLE_NEGATIVE_WIDTH, RECTANGLE_POSITIVE_HEIGHT);
         });
 
-        final String EXPECTED_MESSAGE = "Width or height should be positive.";
+        final String EXPECTED_MESSAGE = "Width should be positive.";
         String actualMessage = exception.getMessage();
         assertTrue(actualMessage.contains(EXPECTED_MESSAGE));
     }
@@ -44,7 +44,7 @@ public class RectangleTest {
             new Rectangle(RECTANGLE_POSITIVE_WIDTH, RECTANGLE_NEGATIVE_HEIGHT);
         });
 
-        final String EXPECTED_MESSAGE = "Width or height should be positive.";
+        final String EXPECTED_MESSAGE = "Height should be positive.";
         String actualMessage = exception.getMessage();
         assertTrue(actualMessage.contains(EXPECTED_MESSAGE));
     }
@@ -60,7 +60,7 @@ public class RectangleTest {
             new Rectangle(RECTANGLE_ZERO_WIDTH, RECTANGLE_POSITIVE_HEIGHT);
         });
 
-        final String EXPECTED_MESSAGE = "Width or height should be positive.";
+        final String EXPECTED_MESSAGE = "Width should be positive.";
         String actualMessage = exception.getMessage();
         assertTrue(actualMessage.contains(EXPECTED_MESSAGE));
     }
@@ -76,7 +76,7 @@ public class RectangleTest {
             new Rectangle(RECTANGLE_POSITIVE_WIDTH, RECTANGLE_ZERO_HEIGHT);
         });
 
-        final String EXPECTED_MESSAGE = "Width or height should be positive.";
+        final String EXPECTED_MESSAGE = "Height should be positive.";
         String actualMessage = exception.getMessage();
         assertTrue(actualMessage.contains(EXPECTED_MESSAGE));
     }
